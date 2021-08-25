@@ -16,7 +16,7 @@
       <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="marker" name="0">
         <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
           <prop v="0" k="angle"/>
-          <prop v="152,125,183,255" k="color"/>
+          <prop v="183,7,48,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
           <prop v="circle" k="name"/>
@@ -47,9 +47,7 @@
     <sizescale/>
   </renderer-v2>
   <customproperties>
-    <property key="dualview/previewExpressions">
-      <value>"Lat"</value>
-    </property>
+    <property value="&quot;Lat&quot;" key="dualview/previewExpressions"/>
     <property value="0" key="embeddedWidgets/count"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
@@ -60,6 +58,7 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory enabled="0" backgroundColor="#ffffff" diagramOrientation="Up" penWidth="0" backgroundAlpha="255" width="15" spacing="5" minimumSize="0" showAxis="1" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" height="15" labelPlacementMethod="XHeight" rotationOffset="270" sizeType="MM" minScaleDenominator="0" penColor="#000000" direction="0" maxScaleDenominator="1e+08" spacingUnit="MM" lineSizeType="MM" barWidth="5" scaleBasedVisibility="0" opacity="1" scaleDependency="Area">
       <fontProperties description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute color="#000000" field="" label=""/>
       <axisSymbol>
         <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="line" name="">
           <layer enabled="1" pass="0" locked="0" class="SimpleLine">

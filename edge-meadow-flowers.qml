@@ -19,7 +19,7 @@
           <prop v="255,127,0,255" k="color"/>
           <prop v="1" k="horizontal_anchor_point"/>
           <prop v="bevel" k="joinstyle"/>
-          <prop v="asterisk_fill" k="name"/>
+          <prop v="triangle" k="name"/>
           <prop v="0,0" k="offset"/>
           <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
           <prop v="MM" k="offset_unit"/>
@@ -47,7 +47,9 @@
     <sizescale/>
   </renderer-v2>
   <customproperties>
-    <property value="&quot;Lat&quot;" key="dualview/previewExpressions"/>
+    <property key="dualview/previewExpressions">
+      <value>"Lat"</value>
+    </property>
     <property value="0" key="embeddedWidgets/count"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
@@ -125,22 +127,44 @@
         </config>
       </editWidget>
     </field>
+    <field configurationFlags="None" name="name">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="date">
+      <editWidget type="DateTime">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
   </fieldConfiguration>
   <aliases>
     <alias index="0" field="Lat" name=""/>
     <alias index="1" field="Long" name=""/>
+    <alias index="2" field="name" name=""/>
+    <alias index="3" field="date" name=""/>
   </aliases>
   <defaults>
     <default expression="" field="Lat" applyOnUpdate="0"/>
     <default expression="" field="Long" applyOnUpdate="0"/>
+    <default expression="" field="name" applyOnUpdate="0"/>
+    <default expression="" field="date" applyOnUpdate="0"/>
   </defaults>
   <constraints>
     <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Lat"/>
     <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Long"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="date"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" desc="" field="Lat"/>
     <constraint exp="" desc="" field="Long"/>
+    <constraint exp="" desc="" field="name"/>
+    <constraint exp="" desc="" field="date"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
@@ -151,6 +175,8 @@
       <column hidden="0" width="-1" type="field" name="Lat"/>
       <column hidden="0" width="-1" type="field" name="Long"/>
       <column hidden="1" width="-1" type="actions"/>
+      <column hidden="0" width="-1" type="field" name="name"/>
+      <column hidden="0" width="-1" type="field" name="date"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
